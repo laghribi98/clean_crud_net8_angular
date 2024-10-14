@@ -1,0 +1,12 @@
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\bin\Debug\net8.0\TicketManagement.Application.deps.json
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\bin\Debug\net8.0\TicketManagement.Application.dll
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\bin\Debug\net8.0\TicketManagement.Application.pdb
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\obj\Debug\net8.0\TicketManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\obj\Debug\net8.0\TicketManagement.Application.AssemblyInfoInputs.cache
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\obj\Debug\net8.0\TicketManagement.Application.AssemblyInfo.cs
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\obj\Debug\net8.0\TicketManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\obj\Debug\net8.0\TicketManagement.Application.sourcelink.json
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\obj\Debug\net8.0\TicketManagement.Application.dll
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\obj\Debug\net8.0\refint\TicketManagement.Application.dll
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\obj\Debug\net8.0\TicketManagement.Application.pdb
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\obj\Debug\net8.0\ref\TicketManagement.Application.dll

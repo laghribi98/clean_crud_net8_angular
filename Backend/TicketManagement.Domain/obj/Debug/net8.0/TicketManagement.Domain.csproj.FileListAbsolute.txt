@@ -1,0 +1,12 @@
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Domain\bin\Debug\net8.0\TicketManagement.Domain.deps.json
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Domain\bin\Debug\net8.0\TicketManagement.Domain.dll
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Domain\bin\Debug\net8.0\TicketManagement.Domain.pdb
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Domain\obj\Debug\net8.0\TicketManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Domain\obj\Debug\net8.0\TicketManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Domain\obj\Debug\net8.0\TicketManagement.Domain.AssemblyInfo.cs
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Domain\obj\Debug\net8.0\TicketManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Domain\obj\Debug\net8.0\TicketManagement.Domain.sourcelink.json
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Domain\obj\Debug\net8.0\TicketManagement.Domain.dll
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Domain\obj\Debug\net8.0\refint\TicketManagement.Domain.dll
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Domain\obj\Debug\net8.0\TicketManagement.Domain.pdb
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Domain\obj\Debug\net8.0\ref\TicketManagement.Domain.dll

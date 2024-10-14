@@ -1,0 +1,13 @@
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\bin\Debug\net8.0\TicketManagement.Infrastructure.deps.json
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\bin\Debug\net8.0\TicketManagement.Infrastructure.dll
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\bin\Debug\net8.0\TicketManagement.Infrastructure.pdb
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\obj\Debug\net8.0\TicketManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\obj\Debug\net8.0\TicketManagement.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\obj\Debug\net8.0\TicketManagement.Infrastructure.AssemblyInfo.cs
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\obj\Debug\net8.0\TicketManagement.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\obj\Debug\net8.0\TicketManagement.Infrastructure.sourcelink.json
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\obj\Debug\net8.0\TicketManagement.Infrastructure.dll
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\obj\Debug\net8.0\refint\TicketManagement.Infrastructure.dll
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\obj\Debug\net8.0\TicketManagement.Infrastructure.pdb
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\obj\Debug\net8.0\ref\TicketManagement.Infrastructure.dll
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\obj\Debug\net8.0\TicketManagement.Infrastructure.csproj.AssemblyReference.cache
