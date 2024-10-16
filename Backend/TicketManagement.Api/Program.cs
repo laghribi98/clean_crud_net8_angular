@@ -1,31 +1,49 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using TicketManagement.Application.Features.Tickets.Handlers;
+using TicketManagement.Infrastructure.Extensions;
 using TicketManagement.Infrastructure.Persistence;
+using FluentValidation.AspNetCore;
+using FluentValidation;
+using TicketManagement.Application.Features.Tickets.Validators;
+using TicketManagement.Api.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
+
 // Charger la configuration des bases de données
 var configuration = builder.Configuration;
-var provider = configuration.GetValue<string>("DatabaseProvider");
 
-if (provider == "SqlServer")
-{
-    builder.Services.AddDbContext<TicketDbContext>(options =>
-        options.UseSqlServer(configuration.GetConnectionString("SqlServerConnection")));
-}
-else if (provider == "InMemory")
-{
-    builder.Services.AddDbContext<TicketDbContext>(options =>
-        options.UseInMemoryDatabase(configuration.GetConnectionString("InMemoryConnection")));
-}
+// Enregistrer les validateurs à partir de l'assembly contenant CreateTicketCommandValidator
+builder.Services.AddValidatorsFromAssemblyContaining<CreateTicketCommandValidator>();
 
-// Add services to the container.
+// Enregistrer l'infrastructure, y compris le DbContext
+builder.Services.AddInfrastructure(configuration);
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Ajouter MediatR pour gérer les Commands et Queries
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(CreateTicketCommandHandler).Assembly));
+
+// Ajouter FluentValidation pour les contrôleurs
+builder.Services.AddControllers()
+    .AddFluentValidation();  // Active FluentValidation pour valider les entrées de l'API
+
+// Configurer Swagger et Endpoints API
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-// Configure In-Memory Database
 
 var app = builder.Build();
+// Enregistrer le middleware de gestion des erreurs
+app.UseMiddleware<ExceptionMiddleware>();
+
+// Appliquer les migrations et créer la base de données si elle n'existe pas (seulement en développement)
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<TicketDbContext>();
+
+    if (app.Environment.IsDevelopment())
+    {
+        dbContext.Database.Migrate();  // Appliquer les migrations uniquement en développement
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -35,7 +53,5 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

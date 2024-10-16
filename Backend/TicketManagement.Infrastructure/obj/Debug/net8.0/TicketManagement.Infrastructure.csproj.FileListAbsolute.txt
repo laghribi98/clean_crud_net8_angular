@@ -11,3 +11,10 @@ C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infr
 C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\obj\Debug\net8.0\TicketManagement.Infrastructure.pdb
 C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\obj\Debug\net8.0\ref\TicketManagement.Infrastructure.dll
 C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\obj\Debug\net8.0\TicketManagement.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\bin\Debug\net8.0\TicketManagement.Domain.dll
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\bin\Debug\net8.0\TicketManagement.Domain.pdb
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\obj\Debug\net8.0\TicketMa.14C6C07D.Up2Date
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\bin\Debug\net8.0\TicketManagement.Infrastructure.runtimeconfig.json
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\obj\Debug\net8.0\TicketManagement.Infrastructure.genruntimeconfig.cache
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\bin\Debug\net8.0\TicketManagement.Application.dll
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Infrastructure\bin\Debug\net8.0\TicketManagement.Application.pdb

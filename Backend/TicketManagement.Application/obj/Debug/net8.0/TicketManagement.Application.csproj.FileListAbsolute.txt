@@ -10,3 +10,7 @@ C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Appl
 C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\obj\Debug\net8.0\refint\TicketManagement.Application.dll
 C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\obj\Debug\net8.0\TicketManagement.Application.pdb
 C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\obj\Debug\net8.0\ref\TicketManagement.Application.dll
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\bin\Debug\net8.0\TicketManagement.Domain.dll
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\bin\Debug\net8.0\TicketManagement.Domain.pdb
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\obj\Debug\net8.0\TicketManagement.Application.csproj.AssemblyReference.cache
+C:\Users\ULTRAPC\Desktop\mes projets\hahn software\Backend\TicketManagement.Application\obj\Debug\net8.0\TicketMa.4D4129CD.Up2Date

@@ -1,23 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement\\",
+  "WorkspaceRootPath": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.Api.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0872303A-831F-40B8-9D97-743470606605}|..\\TicketManagement.Infrastructure\\TicketManagement.Infrastructure.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.infrastructure\\persistence\\ticketdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.Api.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.api\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.Api.csproj|solutionrelative:middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.Api.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{7D9FEC85-3A4C-427D-8D1D-A57BB1D70052}|..\\TicketManagement.Application\\TicketManagement.Application.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.application\\features\\tickets\\handlers\\getticketbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0872303A-831F-40B8-9D97-743470606605}|..\\TicketManagement.Infrastructure\\TicketManagement.Infrastructure.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.infrastructure\\ticketmanagement.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7D9FEC85-3A4C-427D-8D1D-A57BB1D70052}|..\\TicketManagement.Application\\TicketManagement.Application.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.application\\features\\tickets\\queries\\getticketbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F0FCB33-F469-43F2-A70A-478418316C66}|..\\TicketManagement.Domain\\TicketManagement.Domain.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.domain\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D9FEC85-3A4C-427D-8D1D-A57BB1D70052}|..\\TicketManagement.Application\\TicketManagement.Application.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.application\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D9FEC85-3A4C-427D-8D1D-A57BB1D70052}|..\\TicketManagement.Application\\TicketManagement.Application.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.application\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D9FEC85-3A4C-427D-8D1D-A57BB1D70052}|..\\TicketManagement.Application\\TicketManagement.Application.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.application\\common\\wrappers\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.Api.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.api\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.Api.csproj|solutionrelative:controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D9FEC85-3A4C-427D-8D1D-A57BB1D70052}|..\\TicketManagement.Application\\TicketManagement.Application.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.application\\features\\tickets\\commands\\createticketcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D9FEC85-3A4C-427D-8D1D-A57BB1D70052}|..\\TicketManagement.Application\\TicketManagement.Application.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.application\\ticketmanagement.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0872303A-831F-40B8-9D97-743470606605}|..\\TicketManagement.Infrastructure\\TicketManagement.Infrastructure.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.infrastructure\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D9FEC85-3A4C-427D-8D1D-A57BB1D70052}|..\\TicketManagement.Application\\TicketManagement.Application.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.application\\contracts\\iticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,71 +49,162 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TicketDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Infrastructure\\Persistence\\TicketDbContext.cs",
-              "RelativeDocumentMoniker": "..\\TicketManagement.Infrastructure\\Persistence\\TicketDbContext.cs",
-              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Infrastructure\\Persistence\\TicketDbContext.cs",
-              "RelativeToolTip": "..\\TicketManagement.Infrastructure\\Persistence\\TicketDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAgAAAA",
+              "DocumentIndex": 4,
+              "Title": "ValidationException.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Exceptions\\ValidationException.cs",
+              "RelativeDocumentMoniker": "..\\TicketManagement.Application\\Exceptions\\ValidationException.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Exceptions\\ValidationException.cs",
+              "RelativeToolTip": "..\\TicketManagement.Application\\Exceptions\\ValidationException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T22:23:39.172Z",
+              "WhenOpened": "2024-10-16T00:32:24.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "..\\TicketManagement.Application\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "..\\TicketManagement.Application\\Exceptions\\NotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T00:31:54.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Api\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "Middlewares\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Api\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "Middlewares\\ExceptionMiddleware.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAA2wC8AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T00:28:32.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Response.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Common\\Wrappers\\Response.cs",
+              "RelativeDocumentMoniker": "..\\TicketManagement.Application\\Common\\Wrappers\\Response.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Common\\Wrappers\\Response.cs",
+              "RelativeToolTip": "..\\TicketManagement.Application\\Common\\Wrappers\\Response.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAwB8AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T00:24:40.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TicketsController.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Api\\Controllers\\TicketsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TicketsController.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Api\\Controllers\\TicketsController.cs",
+              "RelativeToolTip": "Controllers\\TicketsController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAwwDoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T00:16:48.385Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-14T22:14:30.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TicketManagement.Infrastructure",
-              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Infrastructure\\TicketManagement.Infrastructure.csproj",
-              "RelativeDocumentMoniker": "..\\TicketManagement.Infrastructure\\TicketManagement.Infrastructure.csproj",
-              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Infrastructure\\TicketManagement.Infrastructure.csproj",
-              "RelativeToolTip": "..\\TicketManagement.Infrastructure\\TicketManagement.Infrastructure.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-14T22:05:47.68Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Ticket.cs",
-              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Domain\\Ticket.cs",
-              "RelativeDocumentMoniker": "..\\TicketManagement.Domain\\Ticket.cs",
-              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Domain\\Ticket.cs",
-              "RelativeToolTip": "..\\TicketManagement.Domain\\Ticket.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Title": "GetTicketByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Handlers\\GetTicketByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "..\\TicketManagement.Application\\Features\\Tickets\\Handlers\\GetTicketByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Handlers\\GetTicketByIdQueryHandler.cs",
+              "RelativeToolTip": "..\\TicketManagement.Application\\Features\\Tickets\\Handlers\\GetTicketByIdQueryHandler.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAswB4AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T21:25:08.002Z",
+              "WhenOpened": "2024-10-15T23:50:27.031Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement\\Program.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Api\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABWAAAA",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAACIAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T21:14:25.474Z",
+              "WhenOpened": "2024-10-15T22:30:31.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetTicketByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Queries\\GetTicketByIdQuery.cs",
+              "RelativeDocumentMoniker": "..\\TicketManagement.Application\\Features\\Tickets\\Queries\\GetTicketByIdQuery.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Queries\\GetTicketByIdQuery.cs",
+              "RelativeToolTip": "..\\TicketManagement.Application\\Features\\Tickets\\Queries\\GetTicketByIdQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T00:36:12.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateTicketCommand.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Commands\\CreateTicketCommand.cs",
+              "RelativeDocumentMoniker": "..\\TicketManagement.Application\\Features\\Tickets\\Commands\\CreateTicketCommand.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Commands\\CreateTicketCommand.cs",
+              "RelativeToolTip": "..\\TicketManagement.Application\\Features\\Tickets\\Commands\\CreateTicketCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T23:05:29.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "..\\TicketManagement.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "..\\TicketManagement.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T22:37:16.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ITicketRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Contracts\\ITicketRepository.cs",
+              "RelativeDocumentMoniker": "..\\TicketManagement.Application\\Contracts\\ITicketRepository.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Contracts\\ITicketRepository.cs",
+              "RelativeToolTip": "..\\TicketManagement.Application\\Contracts\\ITicketRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T22:13:03.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TicketManagement.Application",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\TicketManagement.Application.csproj",
+              "RelativeDocumentMoniker": "..\\TicketManagement.Application\\TicketManagement.Application.csproj",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\TicketManagement.Application.csproj",
+              "RelativeToolTip": "..\\TicketManagement.Application\\TicketManagement.Application.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-15T22:12:30.795Z",
               "EditorCaption": ""
             }
           ]

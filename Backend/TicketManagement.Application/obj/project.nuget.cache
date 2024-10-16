@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "T2jNuj26laINx+m/Nhdxj+xaVJn+goqzQBzvkTZXVRE7grz1XkF2R2llJSGlpQrMgeuCk+7QvV4LPuD+ELsDlA==",
+  "dgSpecHash": "nbRUqs7WcvKM06+NHhDNEAkLS8MVsLADQvbcO/UwOy6mw8uBSXdcHSUvTDTOuSCL3wWnQOhEWzKqR0Mo8YTfew==",
   "success": true,
   "projectFilePath": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\TicketManagement.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ULTRAPC\\.nuget\\packages\\fluentvalidation\\11.10.0\\fluentvalidation.11.10.0.nupkg.sha512",
+    "C:\\Users\\ULTRAPC\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.10.0\\fluentvalidation.dependencyinjectionextensions.11.10.0.nupkg.sha512",
+    "C:\\Users\\ULTRAPC\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
+    "C:\\Users\\ULTRAPC\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\ULTRAPC\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "C:\\Users\\ULTRAPC\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ULTRAPC\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ULTRAPC\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
