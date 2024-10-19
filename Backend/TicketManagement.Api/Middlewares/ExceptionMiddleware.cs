@@ -24,7 +24,7 @@ namespace TicketManagement.Api.Middlewares
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Une erreur s'est produite: {ex.Message}");
+                _logger.LogError($"An error occurred: {ex.Message}");
                 await HandleExceptionAsync(context, ex);
             }
         }
@@ -34,25 +34,32 @@ namespace TicketManagement.Api.Middlewares
             context.Response.ContentType = "application/json";
 
             var response = new Response<string>();
-
-            switch (exception)
+            context.Response.StatusCode = exception switch
             {
-                case NotFoundException _:
-                    context.Response.StatusCode = (int)HttpStatusCode.NotFound;
-                    response = new Response<string>("La ressource demandée est introuvable.");
-                    break;
+                ArgumentException _ => (int)HttpStatusCode.BadRequest,
+                NotFoundException _ => (int)HttpStatusCode.NotFound,
+                ValidationException _ => (int)HttpStatusCode.BadRequest,
+                ApplicationException _ => (int)HttpStatusCode.InternalServerError,
+                _ => (int)HttpStatusCode.InternalServerError
+            };
 
-                case ValidationException ex:
-                    context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
-                    response = new Response<string>("Les données fournies ne sont pas valides.");
-                    response.Errors = ex.Errors.ToList();
-                    break;
+            response.Status = context.Response.StatusCode;
 
-                default:
-                    context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                    response = new Response<string>("Une erreur inattendue s'est produite.");
-                    response.Errors.Add(exception.Message);
-                    break;
+            response.Message = exception switch
+            {
+                ArgumentException ex => ex.Message,
+                NotFoundException ex => ex.Message,
+                ValidationException ex => "Validation error occurred.",
+                ApplicationException ex => "An application error occurred.",
+                _ => "An unexpected error occurred."
+            };
+
+            if (exception is ValidationException validationException)
+            {
+                response.Errors = new Dictionary<string, List<string>>
+                {
+                    { "General", validationException.Errors.ToList() }
+                };
             }
 
             var result = JsonSerializer.Serialize(response);
@@ -60,3 +67,4 @@ namespace TicketManagement.Api.Middlewares
         }
     }
 }
+

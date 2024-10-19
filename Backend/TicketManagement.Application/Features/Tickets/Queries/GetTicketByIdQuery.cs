@@ -12,7 +12,7 @@ namespace TicketManagement.Application.Features.Tickets.Queries
 {
     public class GetTicketByIdQuery : IRequest<Response<TicketDto>>
     {
-        public int TicketId { get; set; }
+        public int TicketId { get; }
 
     public GetTicketByIdQuery(int ticketId)
     {

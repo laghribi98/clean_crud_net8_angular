@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using TicketManagement.Application.Common.Wrappers;
 using TicketManagement.Application.Features.Tickets.Commands;
 using TicketManagement.Application.Features.Tickets.Queries;
 
@@ -21,12 +22,15 @@ namespace TicketManagement.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetTicketById(int id)
         {
-            var query = new GetTicketByIdQuery(id);
-            var result = await _mediator.Send(query);
+            // Use MediatR to send GetTicketByIdQuery to the handler
+            var result = await _mediator.Send(new GetTicketByIdQuery(id));
 
-            if (result.Success)
-                return Ok(result.Data);
-            return NotFound(result.Message);
+            if (result.Status == 200)
+            {
+                return Ok(result);
+            }
+
+            return StatusCode(result.Status, result);
         }
 
         // POST: api/tickets
@@ -34,38 +38,85 @@ namespace TicketManagement.Api.Controllers
         public async Task<IActionResult> CreateTicket([FromBody] CreateTicketCommand command)
         {
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            {
+                var errors = new Dictionary<string, List<string>>();
+                foreach (var key in ModelState.Keys)
+                {
+                    var state = ModelState[key];
+                    if (state.Errors.Count > 0)
+                    {
+                        errors[key] = state.Errors.Select(e => e.ErrorMessage).ToList();
+                    }
+                }
+
+                return BadRequest(new Response<object>(errors, status: 400));
+            }
 
             var result = await _mediator.Send(command);
-            if (result.Success)
-                return CreatedAtAction(nameof(GetTicketById), new { id = result.Data }, result.Data);
-            return BadRequest(result.Message);
+
+            if (result.Status == 201)
+            {
+                return StatusCode(result.Status, result);
+            }
+
+            return StatusCode(result.Status, result);
         }
 
         // PUT: api/tickets/{id}
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> UpdateTicket(int id, [FromBody] UpdateTicketCommand command)
-        //{
-        //    if (id != command.TicketId)
-        //        return BadRequest("L'ID du ticket ne correspond pas à l'ID de la commande.");
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateTicket(int id, [FromBody] UpdateTicketCommand command)
+        {
+            if (id != command.TicketId)
+            {
+                return BadRequest(new Response<string>("The ticket ID in the route does not match the ticket ID in the body.", status: 400));
+            }
 
-        //    var result = await _mediator.Send(command);
-        //    if (result.Success)
-        //        return NoContent();
-        //    return BadRequest(result.Message);
-        //}
+            // Use MediatR to send the UpdateTicketCommand to the handler
+            var result = await _mediator.Send(command);
+
+            if (result.Status == 200)
+            {
+                return Ok(result);
+            }
+
+            return StatusCode(result.Status, result);
+        }
 
         // DELETE: api/tickets/{id}
-        //[HttpDelete("{id}")]
-        //public async Task<IActionResult> DeleteTicket(int id)
-        //{
-        //    var command = new DeleteTicketCommand { TicketId = id };
-        //    var result = await _mediator.Send(command);
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteTicket(int id)
+        {
+            // Create a DeleteTicketCommand with the ticket ID
+            var command = new DeleteTicketCommand(id);
 
-        //    if (result.Success)
-        //        return NoContent();
-        //    return NotFound(result.Message);
-        //}
+            // Use MediatR to send the DeleteTicketCommand to the handler
+            var result = await _mediator.Send(command);
+
+            if (result.Status == 200)
+            {
+                return Ok(result);
+            }
+
+            return StatusCode(result.Status, result);
+        }
+
+        // GET: api/tickets
+        [HttpGet]
+        public async Task<IActionResult> GetAllTickets([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
+        {
+            // Create a GetAllTicketsQuery with pagination parameters
+            var query = new GetAllTicketsQuery(pageNumber, pageSize);
+
+            // Use MediatR to send the GetAllTicketsQuery to the handler
+            var result = await _mediator.Send(query);
+
+            if (result.Status == 200)
+            {
+                return Ok(result);
+            }
+
+            return StatusCode(result.Status, result);
+        }
     }
 
 }

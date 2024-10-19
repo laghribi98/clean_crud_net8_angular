@@ -8,12 +8,14 @@ using System.Threading.Tasks;
 using TicketManagement.Application.Common.Wrappers;
 using TicketManagement.Application.Contracts;
 using TicketManagement.Application.Exceptions;
+using TicketManagement.Application.Features.Dtos;
 using TicketManagement.Application.Features.Tickets.Commands;
 using TicketManagement.Domain.Entities;
+using TicketManagement.Domain.Enums;
 
 namespace TicketManagement.Application.Features.Tickets.Handlers
 {
-    public class CreateTicketCommandHandler : IRequestHandler<CreateTicketCommand, Response<int>>
+    public class CreateTicketCommandHandler : IRequestHandler<CreateTicketCommand, Response<CreateTicketResponse>>
     {
         private readonly ITicketRepository _ticketRepository;
 
@@ -22,33 +24,42 @@ namespace TicketManagement.Application.Features.Tickets.Handlers
             _ticketRepository = ticketRepository;
         }
 
-        async Task<Response<int>> IRequestHandler<CreateTicketCommand, Response<int>>.Handle(CreateTicketCommand request, CancellationToken cancellationToken)
+        public async Task<Response<CreateTicketResponse>> Handle(CreateTicketCommand request, CancellationToken cancellationToken)
         {
+            // Validate the status value
+            if (!Enum.IsDefined(typeof(TicketStatus), request.Status))
+            {
+                throw new ArgumentException("Invalid status provided. The status must be 'Open' or 'Closed'.", nameof(request.Status));
+            }
+
+            // Creating the new ticket entity from the request
+            var ticket = new Ticket
+            {
+                Description = request.Description,
+                Status = request.Status,
+                Date = DateTime.UtcNow
+            };
+
             try
             {
-                ValidationResult validationResult = Validate(request);
-                if (!validationResult.IsValid)
-                {
-                    throw new ValidationException(validationResult.Errors);
-                }
-
-                var ticket = new Ticket
-                {
-                    //l'ID est généré automatiquement par la base de données
-                    Description = request.Description,
-                    Status = request.Status,
-                    Date = DateTime.UtcNow
-                };
-
+                // Add the new ticket to the repository (which will save it in the database)
                 await _ticketRepository.AddAsync(ticket);
-
-                // Supposez que l'ID du ticket est assigné après l'insertion dans la base de données
-                return new Response<int>(ticket.Ticket_ID, "Le ticket a été créé avec succès.");
             }
             catch (Exception ex)
             {
-                return new Response<int>("Erreur lors de la création du ticket : " + ex.Message);
+                throw new ApplicationException($"An error occurred while creating the ticket: {ex.Message}", ex);
             }
+
+            // Construct the response DTO
+            var response = new CreateTicketResponse
+            {
+                TicketId = ticket.Ticket_ID,
+                Description = ticket.Description,
+                Status = ticket.Status.ToString() // Convert enum to string for better readability
+            };
+
+            // Return success response with ticket details
+            return new Response<CreateTicketResponse>(response, "Ticket created successfully.", status: 201);
         }
 
         private ValidationResult Validate(CreateTicketCommand request)

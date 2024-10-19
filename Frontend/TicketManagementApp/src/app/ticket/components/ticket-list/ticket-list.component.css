@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(170, 165, 165);
+}
+td a {
+    margin-right : 7px;
+    color:purple
+}
+
+.tickets-wrapper{
+    margin-top : 80px !important;
+}
+
+.action-btn{
+    margin-right : 8px;
+}
+
+.add-ticket>button {
+    width: 400px;;
+}
+
+.table-success th {
+background-color: green; /* Override Bootstrap's styles globally */
+color: white !important;
+}
+
+/* Ensure table has a fixed layout */
+.table-fixed {
+  table-layout: fixed; /* Ensures table keeps a fixed width for columns */
+  width: 100%; /* Ensures table takes up the full width of its container */
+}
+
+/* Style sortable headers */
+.sortable-header {
+  cursor: pointer;
+  white-space: nowrap; /* Prevents text from wrapping */
+  position: relative; /* For positioning the sort arrow */
+}
+
+/* Style for the sort arrows to ensure no extra space */
+.sortable-header span {
+  position: absolute;
+  right: 10px; /* Adjust to align arrow to the right of the header text */
+  visibility: hidden; /* Hide by default */
+}
+
+/* Show the sort arrow only when sorting that column */
+.sortable-header span[ng-reflect-ng-if="true"] {
+  visibility: visible; /* Make visible when the condition is true */
+}
+

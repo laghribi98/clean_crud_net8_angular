@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TicketManagement.Application.Contracts;
+using TicketManagement.Application.Exceptions;
 using TicketManagement.Domain.Entities;
 using TicketManagement.Infrastructure.Persistence;
 
@@ -44,7 +45,7 @@ namespace TicketManagement.Infrastructure.Repositories
             var ticket = await _context.Tickets.FindAsync(id);
             if (ticket == null)
             {
-                throw new KeyNotFoundException($"Aucun ticket avec l'ID {id} n'a été trouvé.");
+                throw new NotFoundException($"No ticket with ID {id} found.");
             }
 
             return ticket;

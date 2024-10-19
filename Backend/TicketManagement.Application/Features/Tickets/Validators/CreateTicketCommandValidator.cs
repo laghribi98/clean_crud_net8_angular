@@ -17,7 +17,7 @@ namespace TicketManagement.Application.Features.Tickets.Validators
                 .MaximumLength(200).WithMessage("La description ne peut pas dépasser 200 caractères.");
 
             RuleFor(x => x.Status)
-                .NotEmpty().WithMessage("Le statut est requis.");
+            .IsInEnum().WithMessage("Le statut doit être soit 'Open' (1) soit 'Closed' (2).");
         }
     }
 }

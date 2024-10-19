@@ -25,20 +25,21 @@ namespace TicketManagement.Application.Features.Tickets.Handlers
         {
             var ticket = await _ticketRepository.GetByIdAsync(request.TicketId);
 
+            // If ticket is not found, throw NotFoundException
             if (ticket == null)
             {
-                throw new NotFoundException($"Le ticket avec l'ID {request.TicketId} n'a pas été trouvé.");
+                throw new NotFoundException($"The ticket with ID {request.TicketId} was not found.");
             }
 
             var ticketDto = new TicketDto
             {
                 TicketId = ticket.Ticket_ID,
                 Description = ticket.Description,
-                Status = ticket.Status,
+                Status = ticket.Status.ToString(),  // Convert to string
                 CreatedDate = ticket.Date
             };
 
-            return new Response<TicketDto>(ticketDto, "Ticket récupéré avec succès.");
+            return new Response<TicketDto>(ticketDto, "Ticket retrieved successfully.", status: 200);
         }
     }
 }

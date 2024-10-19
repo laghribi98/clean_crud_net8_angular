@@ -8,36 +8,41 @@ namespace TicketManagement.Application.Common.Wrappers
 {
     public class Response<T>
     {
-        public bool Success { get; set; }
-        public string? Message { get; set; }
-        public T? Data { get; set; }
-        public List<string> Errors { get; set; }
+        public int Status { get; set; }
+        public string Message { get; set; }
+        public T Data { get; set; }
+        public Dictionary<string, List<string>> Errors { get; set; }
 
         public Response()
         {
-            Errors = new List<string>();
+            Errors = new Dictionary<string, List<string>>();
         }
 
-        public Response(T data, string message = "")
+        public Response(T data, string message = null, int status = 200)
         {
-            Success = true;
+            Status = status;
             Message = message;
             Data = data;
-            Errors = new List<string>();
+            Errors = new Dictionary<string, List<string>>();
         }
 
-        public Response(string errorMessage)
+        public Response(string errorMessage, int status = 400)
         {
-            Success = false;
+            Status = status;
             Message = errorMessage;
-            Errors = new List<string> { errorMessage };
+            Errors = new Dictionary<string, List<string>>
+        {
+            { "General", new List<string> { errorMessage } }
+        };
         }
 
-        public Response(List<string> errorMessages)
+        public Response(Dictionary<string, List<string>> errorMessages, int status = 400)
         {
-            Success = false;
+            Status = status;
             Errors = errorMessages;
         }
     }
+
+
 
 }

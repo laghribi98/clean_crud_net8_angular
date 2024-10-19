@@ -10,7 +10,7 @@ namespace TicketManagement.Domain.Entities
     {
         [Key]
         [Required]
-        public int Ticket_ID { get; }
+        public int Ticket_ID { get; set; }
         public string Description { get; set; }
 
         public TicketStatus Status { get; set; }
@@ -21,7 +21,7 @@ namespace TicketManagement.Domain.Entities
         {
             Description = string.Empty;
             Date = DateTime.Today;
-            Status = TicketStatus.Open;
+            //Status = TicketStatus.Open;
         }
 
         // Méthode pour mettre à jour la description
