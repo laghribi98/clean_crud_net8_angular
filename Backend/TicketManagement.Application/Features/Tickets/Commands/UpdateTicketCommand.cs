@@ -14,6 +14,6 @@ namespace TicketManagement.Application.Features.Tickets.Commands
     {
         public int TicketId { get; set; }
         public string Description { get; set; } = String.Empty;
-        public string Status { get; set; }
+        public TicketStatus Status { get; set; }
     }
 }

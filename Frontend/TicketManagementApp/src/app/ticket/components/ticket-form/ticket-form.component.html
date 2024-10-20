@@ -1,0 +1,40 @@
+<div class="card mb-4">
+    <div class="card-header">
+      <h5 class="card-title">
+        {{ ticketData ? 'Update Ticket ' + ticketData.ticketId : 'Create New Ticket' }}
+      </h5>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="ticketForm" (ngSubmit)="onSubmit()">
+        <!-- Description Field -->
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <input type="text" id="description" class="form-control" formControlName="description">
+          <div *ngIf="ticketForm.get('description')?.invalid && ticketForm.get('description')?.touched" class="text-danger">
+            Description is required.
+          </div>
+        </div>
+  
+        <!-- Status Field -->
+        <div class="mb-3">
+          <label for="status" class="form-label">Status</label>
+          <select id="status" class="form-select" formControlName="status">
+            <option value="Open">Open</option>
+            <option value="Closed">Closed</option>
+          </select>
+          <div *ngIf="ticketForm.get('status')?.invalid && ticketForm.get('status')?.touched" class="text-danger">
+            Status is required.
+          </div>
+        </div>
+  
+        <!-- Form Buttons -->
+        <div class="text-end">
+          <button type="button" class="btn btn-secondary me-2" (click)="onCancel()">Cancel</button>
+          <button type="submit" class="btn btn-primary" [disabled]="ticketForm.invalid">
+            {{ ticketData ? 'Update Ticket' : 'Create Ticket' }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

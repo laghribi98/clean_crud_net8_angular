@@ -1,9 +1,8 @@
-body{
-    background-color: rgb(170, 165, 165);
-}
+
 td a {
     margin-right : 7px;
-    color:purple
+    color:purple;
+    cursor: pointer;
 }
 
 .tickets-wrapper{
@@ -15,18 +14,19 @@ td a {
 }
 
 .add-ticket>button {
-    width: 400px;;
+    width: 100px;
+    background-color: #03A559;
 }
 
 .table-success th {
-background-color: green; /* Override Bootstrap's styles globally */
+background-color: #03A559; 
 color: white !important;
 }
 
 /* Ensure table has a fixed layout */
 .table-fixed {
-  table-layout: fixed; /* Ensures table keeps a fixed width for columns */
-  width: 100%; /* Ensures table takes up the full width of its container */
+  table-layout: fixed; 
+  width: 100%; 
 }
 
 /* Style sortable headers */

@@ -25,6 +25,12 @@ namespace TicketManagement.Application.Features.Tickets.Handlers
 
         public async Task<Response<UpdateTicketResponse>> Handle(UpdateTicketCommand request, CancellationToken cancellationToken)
         {
+            // Validate the status value
+            if (!Enum.IsDefined(typeof(TicketStatus), request.Status))
+            {
+                throw new ArgumentException("Invalid status provided. The status must be 'Open' or 'Closed'.", nameof(request.Status));
+            }
+
             // Retrieve the existing ticket
             var ticket = await _ticketRepository.GetByIdAsync(request.TicketId);
 
@@ -33,15 +39,9 @@ namespace TicketManagement.Application.Features.Tickets.Handlers
                 throw new NotFoundException($"The ticket with ID {request.TicketId} was not found.");
             }
 
-            // Validate the status value
-            if (!Enum.IsDefined(typeof(TicketStatus), request.Status))
-            {
-                throw new ArgumentException("Invalid status provided. The status must be 'Open' or 'Closed'.", nameof(request.Status));
-            }
-
             // Update the ticket details
             ticket.Description = request.Description;
-            //ticket.Status = request.Status.ToString();
+            ticket.Status = request.Status;
 
             try
             {

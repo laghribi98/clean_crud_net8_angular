@@ -3,14 +3,33 @@
   "WorkspaceRootPath": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.Api.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D9FEC85-3A4C-427D-8D1D-A57BB1D70052}|..\\TicketManagement.Application\\TicketManagement.Application.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.application\\features\\tickets\\handlers\\updateticketcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.Api.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.api\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.Api.csproj|solutionrelative:controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D9FEC85-3A4C-427D-8D1D-A57BB1D70052}|..\\TicketManagement.Application\\TicketManagement.Application.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.application\\features\\tickets\\commands\\updateticketcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D9FEC85-3A4C-427D-8D1D-A57BB1D70052}|..\\TicketManagement.Application\\TicketManagement.Application.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.application\\features\\tickets\\validators\\updateticketcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D9FEC85-3A4C-427D-8D1D-A57BB1D70052}|..\\TicketManagement.Application\\TicketManagement.Application.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.application\\features\\tickets\\handlers\\createticketcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D9FEC85-3A4C-427D-8D1D-A57BB1D70052}|..\\TicketManagement.Application\\TicketManagement.Application.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.application\\features\\tickets\\commands\\createticketcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D9FEC85-3A4C-427D-8D1D-A57BB1D70052}|..\\TicketManagement.Application\\TicketManagement.Application.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.application\\features\\tickets\\validators\\createticketcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D9FEC85-3A4C-427D-8D1D-A57BB1D70052}|..\\TicketManagement.Application\\TicketManagement.Application.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.application\\features\\tickets\\handlers\\updateticketcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F0FCB33-F469-43F2-A70A-478418316C66}|..\\TicketManagement.Domain\\TicketManagement.Domain.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.domain\\entities\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.Api.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1CA4433A-8476-4F33-8D24-39B5C4DDCFDE}|TicketManagement.Api.csproj|c:\\users\\ultrapc\\desktop\\mes projets\\hahn software\\backend\\ticketmanagement.api\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,50 +46,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CreateTicketCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Validators\\CreateTicketCommandValidator.cs",
-              "RelativeDocumentMoniker": "..\\TicketManagement.Application\\Features\\Tickets\\Validators\\CreateTicketCommandValidator.cs",
-              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Validators\\CreateTicketCommandValidator.cs",
-              "RelativeToolTip": "..\\TicketManagement.Application\\Features\\Tickets\\Validators\\CreateTicketCommandValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABBAAAA",
+              "Title": "TicketsController.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Api\\Controllers\\TicketsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TicketsController.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Api\\Controllers\\TicketsController.cs",
+              "RelativeToolTip": "Controllers\\TicketsController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAwwEMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T17:38:03.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Api\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Api\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAAAEAAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T17:36:16.459Z",
+              "WhenOpened": "2024-10-20T20:52:52.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "UpdateTicketCommand.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Commands\\UpdateTicketCommand.cs",
+              "RelativeDocumentMoniker": "..\\TicketManagement.Application\\Features\\Tickets\\Commands\\UpdateTicketCommand.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Commands\\UpdateTicketCommand.cs",
+              "RelativeToolTip": "..\\TicketManagement.Application\\Features\\Tickets\\Commands\\UpdateTicketCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T10:09:43.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "UpdateTicketCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Handlers\\UpdateTicketCommandHandler.cs",
               "RelativeDocumentMoniker": "..\\TicketManagement.Application\\Features\\Tickets\\Handlers\\UpdateTicketCommandHandler.cs",
               "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Handlers\\UpdateTicketCommandHandler.cs",
               "RelativeToolTip": "..\\TicketManagement.Application\\Features\\Tickets\\Handlers\\UpdateTicketCommandHandler.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAiwCsAAAA4AAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAArwBwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T21:52:47.295Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateTicketCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Handlers\\CreateTicketCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\TicketManagement.Application\\Features\\Tickets\\Handlers\\CreateTicketCommandHandler.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Handlers\\CreateTicketCommandHandler.cs",
+              "RelativeToolTip": "..\\TicketManagement.Application\\Features\\Tickets\\Handlers\\CreateTicketCommandHandler.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAhwCAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T20:28:58.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateTicketCommand.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Commands\\CreateTicketCommand.cs",
+              "RelativeDocumentMoniker": "..\\TicketManagement.Application\\Features\\Tickets\\Commands\\CreateTicketCommand.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Commands\\CreateTicketCommand.cs",
+              "RelativeToolTip": "..\\TicketManagement.Application\\Features\\Tickets\\Commands\\CreateTicketCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T20:25:37.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Domain\\Entities\\Ticket.cs",
+              "RelativeDocumentMoniker": "..\\TicketManagement.Domain\\Entities\\Ticket.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Domain\\Entities\\Ticket.cs",
+              "RelativeToolTip": "..\\TicketManagement.Domain\\Entities\\Ticket.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T20:28:03.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "UpdateTicketCommandValidator.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Validators\\UpdateTicketCommandValidator.cs",
+              "RelativeDocumentMoniker": "..\\TicketManagement.Application\\Features\\Tickets\\Validators\\UpdateTicketCommandValidator.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Validators\\UpdateTicketCommandValidator.cs",
+              "RelativeToolTip": "..\\TicketManagement.Application\\Features\\Tickets\\Validators\\UpdateTicketCommandValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T10:09:55.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateTicketCommandValidator.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Validators\\CreateTicketCommandValidator.cs",
+              "RelativeDocumentMoniker": "..\\TicketManagement.Application\\Features\\Tickets\\Validators\\CreateTicketCommandValidator.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Application\\Features\\Tickets\\Validators\\CreateTicketCommandValidator.cs",
+              "RelativeToolTip": "..\\TicketManagement.Application\\Features\\Tickets\\Validators\\CreateTicketCommandValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T17:38:03.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T17:36:16.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ExceptionMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Api\\Middlewares\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "Middlewares\\ExceptionMiddleware.cs",
@@ -78,12 +175,11 @@
               "RelativeToolTip": "Middlewares\\ExceptionMiddleware.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAowCkAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T21:47:41.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T21:47:41.688Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "GetAllTicketsQueryHandlerTests.cs",
               "DocumentMoniker": "C:\\Users\\ULTRAPC\\Desktop\\mes projets\\hahn software\\Backend\\TicketManagement.Tests\\Features\\Tickets\\Handlers\\GetAllTicketsQueryHandlerTests.cs",
               "RelativeDocumentMoniker": "..\\TicketManagement.Tests\\Features\\Tickets\\Handlers\\GetAllTicketsQueryHandlerTests.cs",
