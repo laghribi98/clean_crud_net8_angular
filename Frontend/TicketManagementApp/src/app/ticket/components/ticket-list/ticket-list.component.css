@@ -32,19 +32,28 @@ color: white !important;
 /* Style sortable headers */
 .sortable-header {
   cursor: pointer;
-  white-space: nowrap; /* Prevents text from wrapping */
-  position: relative; /* For positioning the sort arrow */
+  white-space: nowrap; 
+  position: relative; 
 }
 
 /* Style for the sort arrows to ensure no extra space */
 .sortable-header span {
   position: absolute;
-  right: 10px; /* Adjust to align arrow to the right of the header text */
-  visibility: hidden; /* Hide by default */
+  right: 10px; 
+  visibility: hidden;
 }
 
 /* Show the sort arrow only when sorting that column */
 .sortable-header span[ng-reflect-ng-if="true"] {
-  visibility: visible; /* Make visible when the condition is true */
+  visibility: visible; 
+}
+
+.page-link:focus, .page-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.page-link{
+  cursor: pointer;
 }
 

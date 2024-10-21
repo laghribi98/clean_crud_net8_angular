@@ -21,10 +21,13 @@ export class TicketFormComponent implements OnChanges {
     this.ticketForm = this.fb.group({
       ticketId: [null], // ticketId will only be set during update
       description: ['', Validators.required],
-      status: ['', Validators.required]
+      status: ['Open', Validators.required],
+      
     });
   }
-
+  ngOnInit(){
+    this.ticketForm.patchValue({ status: 'Open' });
+  }
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['ticketData'] && this.ticketData) {
       let statusId = this.ticketData.status;

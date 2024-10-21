@@ -9,7 +9,7 @@
         <!-- Description Field -->
         <div class="mb-3">
           <label for="description" class="form-label">Description</label>
-          <input type="text" id="description" class="form-control" formControlName="description">
+          <input type="text" id="description" class="form-control" formControlName="description" placeholder="Enter a short description of the ticket">
           <div *ngIf="ticketForm.get('description')?.invalid && ticketForm.get('description')?.touched" class="text-danger">
             Description is required.
           </div>
@@ -22,9 +22,6 @@
             <option value="Open">Open</option>
             <option value="Closed">Closed</option>
           </select>
-          <div *ngIf="ticketForm.get('status')?.invalid && ticketForm.get('status')?.touched" class="text-danger">
-            Status is required.
-          </div>
         </div>
   
         <!-- Form Buttons -->

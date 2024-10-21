@@ -72,53 +72,59 @@
       </tfoot>
     </table>
 
-
-
     <nav aria-label="Page navigation" class="d-flex justify-content-center mt-4">
       <ul class="pagination">
         <!-- First Page Button -->
         <li class="page-item" [class.disabled]="currentPage === 1">
-          <a class="page-link bg-secondary text-light" (click)="goToPage(1)" aria-label="First">
-            <span aria-hidden="true">&laquo;&laquo;</span>
+          <a class="page-link" (click)="goToPage(1)" aria-label="First Page" [attr.aria-disabled]="currentPage === 1">
+            <i class="bi bi-chevron-double-left"></i>
+            <span class="sr-only">First</span>
           </a>
         </li>
-
+    
         <!-- Previous Page Button -->
         <li class="page-item" [class.disabled]="currentPage === 1">
-          <a class="page-link bg-secondary text-light" (click)="prevPage()" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
+          <a class="page-link" (click)="prevPage()" aria-label="Previous Page" [attr.aria-disabled]="currentPage === 1">
+            <i class="bi bi-chevron-left"></i>
+            <span class="sr-only">Previous</span>
           </a>
         </li>
-
+    
         <!-- Page Numbers -->
         <li class="page-item" *ngFor="let page of getPageNumbers()" [class.active]="page === currentPage">
-          <a class="page-link bg-secondary text-light" (click)="goToPage(page)">
+          <a class="page-link" (click)="goToPage(page)">
             {{ page }}
+            <span class="sr-only" *ngIf="page === currentPage">(current)</span>
           </a>
         </li>
-
+    
         <!-- Next Page Button -->
         <li class="page-item" [class.disabled]="currentPage === totalPages">
-          <a class="page-link bg-secondary text-light" (click)="nextPage()" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
+          <a class="page-link" (click)="nextPage()" aria-label="Next Page" [attr.aria-disabled]="currentPage === totalPages">          
+            <span class="sr-only">Next</span>
+            <i class="bi bi-chevron-right"></i>
           </a>
         </li>
-
+    
         <!-- Last Page Button -->
-        <li class="page-item " [class.disabled]="currentPage === totalPages">
-          <a class="page-link bg-secondary text-light" (click)="goToPage(totalPages)" aria-label="Last">
-            <span aria-hidden="true">&raquo;&raquo;</span>
+        <li class="page-item" [class.disabled]="currentPage === totalPages">
+          <a class="page-link" (click)="goToPage(totalPages)" aria-label="Last Page" [attr.aria-disabled]="currentPage === totalPages">          
+            <span class="sr-only">Last</span>
+            <i class="bi bi-chevron-double-right"></i>
           </a>
         </li>
       </ul>
     </nav>
+    
+    
+    
 
 
     <div class="text-center">
       Page {{ currentPage }} of {{ totalPages }} (Total Tickets: {{ totalCount }})
     </div>
 
-   
+
   </div>
   <div class="container">
     <div class="row">
@@ -130,5 +136,5 @@
       </div>
     </div>
   </div>
-  
+
 </div>
